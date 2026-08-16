@@ -23,8 +23,8 @@ def remove_task():
 
 def menu()
     while True:
-        print("/n===SIMPLE TASK MANAGER===")
-        print("/n--------MENU--------")
+        print("\n===SIMPLE TASK MANAGER===")
+        print("\n--------MENU--------")
         print("1. View Tasks")
         print("2. Add Task")
         print("3. Edit Task")
