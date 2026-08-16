@@ -31,11 +31,11 @@ def edit_task():
    
     try:
         task_num = int(input("\nEnter the number of the task you want to edit: "))
-        if 1 <= task_num <= len(tasks):
+        if 1 <= task_num <= len(task_storage):
             new_name = input("Enter the new task description: ").strip()
             if new_name:
-                old_name = tasks[task_num - 1]
-                tasks[task_num - 1] = new_name
+                old_name = task_storage[task_num - 1]
+                task_storage[task_num - 1] = new_name
                 print(f"Updated '{old_name}' to '{new_name}'.")
             else:
                 print("Task description cannot be empty.")
