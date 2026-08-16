@@ -17,8 +17,12 @@ def display_tasks():
 
 # Cassey - Gawa ka dito ng function na mag a-add ng task as string sa task_storage
 def add_task():
-    print("\n[add_task not implemented yet - Cassey's part]")
-
+    task_name = input("\nEnter the task to add: ").strip()
+    if task_name:
+        task_storage.append(task_name)
+        print(f"Task '{task_name}' added successfully!")
+    else:
+        print("Task cannot be empty.")
 
 # Joab - Gawa ka dito ng function na mag a-update or edit ng mga task
 def edit_task():
